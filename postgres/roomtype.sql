@@ -1,5 +1,6 @@
 \c lsf_dd
 
+<<<<<<< HEAD
 SELECT 'INSERT INTO roomtype (rtype,description, external_id) VALUES (' || raumartid + 1 || ', ''' || dtxt || ''', ' || raumartid || ');' from k_raumart ORDER by raumartid;
 
 
@@ -18,3 +19,6 @@ INSERT INTO roomtype (rtype,description, external_id) VALUES (12, 'Terminalpool'
 INSERT INTO roomtype (rtype,description, external_id) VALUES (13, 'Gemeinschaftsraum', 12);
 INSERT INTO roomtype (rtype,description, external_id) VALUES (14, 'Unklass. LV-Raum', 13);
 INSERT INTO roomtype (rtype,description, external_id) VALUES (15, 'Musikübungsraum', 14);
+=======
+SELECT 'INSERT INTO roomtype (rtype,description) VALUES (' || raumartid + 1 || ', ''' || dtxt || ''');' from k_raumart ORDER by raumartid;
+>>>>>>> cbbebbe8b667ad2210be74f5a8b5ec735ffef184
