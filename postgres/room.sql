@@ -1,11 +1,7 @@
 \d lsf_dd
 
-<<<<<<< HEAD
 SELECT 'INSERT INTO room (pin, creation, description, domain, owner_uid, rtype, external_id) VALUES (' || floor(random() * (999999-99999+1) + 99999)::int || ', ''' || CURRENT_TIMESTAMP || ''', ''' || replace( dtxt, '''', '''''') || ''', ''uhi'', ''LSF'', ' || raumartid+1 || ', ' || rgid || ');'
 from raum where aikz='A' and rgid NOT IN (175, 251);
-
-
-
 
 INSERT INTO room (pin, creation, description, domain, owner_uid, rtype, external_id) VALUES (236955, '2020-10-06 11:37:13.414603+02', 'Domäne Park', 'uhi', 'LSF', 10, 232);
 INSERT INTO room (pin, creation, description, domain, owner_uid, rtype, external_id) VALUES (306976, '2020-10-06 11:37:13.414603+02', 'H 013 (Foyer vor H 010)', 'uhi', 'LSF', 10, 231);
@@ -181,7 +177,3 @@ INSERT INTO room (pin, creation, description, domain, owner_uid, rtype, external
 INSERT INTO room (pin, creation, description, domain, owner_uid, rtype, external_id) VALUES (430322, '2020-10-06 11:37:13.414603+02', 'B 145 (Seminarraum, gesperrt im Sommersemester 2020)', 'uhi', 'LSF', 11, 240);
 INSERT INTO room (pin, creation, description, domain, owner_uid, rtype, external_id) VALUES (273673, '2020-10-06 11:37:13.414603+02', 'Sp Schwimmhalle (gesperrt bis 31.03.2020)', 'uhi', 'LSF', 5, 41);
 INSERT INTO room (pin, creation, description, domain, owner_uid, rtype, external_id) VALUES (202739, '2020-10-06 11:37:13.414603+02', 'B 141 (Seminarraum, gesperrt ab dem Sommersemester 2020)', 'uhi', 'LSF', 11, 242);
-=======
-SELECT 'INSERT INTO room (pin, creation, description, domain, owner_uid, rtype) VALUES (' || floor(random() * (999999-99999+1) + 99999)::int || ', ''' || CURRENT_TIMESTAMP || ''', ''' || dtxt || ''', ''uhi'', null, ' || raumartid+1 || ');'
-from raum where aikz='A'
->>>>>>> cbbebbe8b667ad2210be74f5a8b5ec735ffef184
